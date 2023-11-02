@@ -3,12 +3,12 @@ package usecase
 import "github.com/LeoCunha98/urubu-do-pix/internal/domain/entity"
 
 type CreateUserInputDto struct {
-	Name string
+	Name string `json:"name"`
 }
 
 type CreateUserOutputDto struct {
-	ID   string
-	Name string
+	ID   string `json:"id"`
+	Name string `json:"name"`
 }
 
 type CreateUserUseCase struct {

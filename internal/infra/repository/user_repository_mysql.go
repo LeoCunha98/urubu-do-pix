@@ -10,6 +10,16 @@ type UserRepositoryMySql struct {
 	DB *sql.DB
 }
 
+// Find implements entity.UserRepository.
+func (*UserRepositoryMySql) Find(id string) (*entity.User, error) {
+	panic("unimplemented")
+}
+
+// Update implements entity.UserRepository.
+func (*UserRepositoryMySql) Update(user *entity.User) error {
+	panic("unimplemented")
+}
+
 func NewUserRepositoryMySql(db *sql.DB) *UserRepositoryMySql {
 	return &UserRepositoryMySql{DB: db}
 }
